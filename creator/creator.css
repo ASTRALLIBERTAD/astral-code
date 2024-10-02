@@ -86,7 +86,7 @@ body{
   display: inline-block;
 }
 
-@media screen and (width >= 1200px) {
+@media screen and (width > 1200px) {
 .t{
   font-size: 40px;
 }
