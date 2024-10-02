@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Teacher's day</title>
+     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+     <style> model-viewer{ 
+       margin: 0;
+       width: 100%;
+       height: 300px;
+       display: block;}</style>
+  <link href="creator.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card1">
+        <h2>Expert Programmer</h2>
+        <iframe width="170" height="150" src="https://www.youtube.com/embed/AkvgvvHrggY"></iframe>
+      </div>
+      <div class="card2">
+        <h2>Code with Marish</h2>
+        <iframe width="170" height="150" src="https://www.youtube.com/embed/R0neXfXUIRs"></iframe>
+      </div>
+   </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="creator/creator.html">CREATOR</a></li>
+        <li><a href="../about/about.html">ABOUT</a></li>
+      </ul>
+    </div>
+    <div class="model-container">
+    <model-viewer id="myModel" src="model.gltf" alt="A 3D model" auto-rotate camera-controls camera-orbit="180deg 90deg 6m" camera-target="0m 1m 0m"></model-viewer>
+    <div class="t"><h2>THANKS TO</h2></div>
+  </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+
+</html>

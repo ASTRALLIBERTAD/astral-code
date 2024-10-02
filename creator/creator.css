@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7F5289;
+}
+
+.t{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 20px;
+  color: #A6D1E6;
+}
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.2fr 1fr 1fr; 
+  gap: 0 0; 
+  grid-template-areas:
+    ". title ."
+    ". container2 ."
+    ". container1 ."
+}
+
+.card2{
+  font-size: 16.3px;
+}
+.title {
+  font-size: 25px;
+  font-family: Florence, cursive;
+  text-align: center;
+  color: #FEFBF6;
+}
+
+.model-container{
+  grid-area: container2;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+
+
+.card{
+  grid-area: container1;
+  display: flex;
+  text-align: center;
+}
+.navbar{
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  position: fixed;
+  display: flex;
+  text-wrap: nowrap;
+  word-spacing: 10px;
+}
+
+.navbar ul{
+  list-style-type: none;
+  background-color: black;
+  opacity: 25%;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar li{
+  justify-content: space-evenly;
+  display: inline-block;
+}
+
+@media screen and (width >= 1200px) {
+.t{
+  font-size: 40px;
+}
+
+.card2{
+  font-size: 20px;
+}
+
+.card1{
+  font-size: 19px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
