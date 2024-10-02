@@ -48,35 +48,27 @@ body {
 }
 
 .navbar {
+.navbar{
   position: fixed;
   bottom: 0%;
   left: 50%;
   transform: translate(-50%);
+  position: fixed;
   display: flex;
-  flex-wrap: wrap; /* Allow navbar items to wrap on smaller screens */
-  justify-content: center; /* Center the items */
+  text-wrap: nowrap;
   word-spacing: 10px;
 }
 
-.navbar ul {
+.navbar ul{
   list-style-type: none;
   background-color: black;
   opacity: 25%;
-  padding: 0; /* Remove padding for better alignment */
-  margin: 0; /* Remove margin for better alignment */
 }
 
-.navbar a {
+.navbar a{
   color: white;
   text-decoration: none;
-  padding: 10px; /* Add some padding for clickable area */
-  font-size: 20px; /* Base font size for navbar links */
-  transition: font-size 0.3s; /* Smooth transition for font-size */
-}
-
-.navbar li {
-  justify-content: space-evenly;
-  display: inline-block;
+  font-size: 40px;
 }
 
 /* Larger screens */
