@@ -9,14 +9,13 @@
   box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bgColor);
 }
-
 
 .container {
   display: grid; 
@@ -29,85 +28,73 @@ body{
     ". container1 ."; 
 }
 
-.t2{
+.t2 {
   grid-area: title;
-  font-size: 25px;
+  font-size: calc(2.5vh + 1vw); /* Responsive font size based on viewport height and width */
   font-family: Florence, cursive;
   text-align: center;
   color: black;
 }
 
-.para{
+.para {
   height: 240px;
   width: 300px;
   background-color: #433878;
   grid-area: container2;
-  font-size: 19px;
+  font-size: calc(2vh + 1vw); /* Responsive font size based on viewport height */
   color: #FEFBF6;
   font-family: Florence, Sans-Serif;
   text-align: center;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   bottom: 0%;
   left: 50%;
   transform: translate(-50%);
-  position: fixed;
   display: flex;
-  text-wrap: nowrap;
   word-spacing: 10px;
 }
 
-.navbar ul{
+.navbar ul {
   list-style-type: none;
   background-color: black;
   opacity: 25%;
 }
 
-.navbar a{
+.navbar a {
   color: white;
   text-decoration: none;
+  font-size: calc(1.5vh + 1vw); /* Responsive font size */
 }
 
-.navbar li{
+.navbar li {
   justify-content: space-evenly;
   display: inline-block;
 }
 
-@media screen and (width >= 1200px) {
-.t2{
-  grid-area: title;
-  font-size: 35px;
-  font-family: Florence, cursive;
-  text-align: center;
-  color: black;
-}
-
-.para{
-  height: 500px;
-  width: 900px;
-  background-color: #A6D1E6;
-  grid-area: container2;
-  font-size: 50px;
-  color: black;
-  font-family: Florence, Sans-Serif;
-  text-align: center;
-}
-
-.navbar a{
-    color: white;
-    text-decoration: none;
-    font-size: 60px;
+/* Larger screens */
+@media screen and (min-width: 1200px) {
+  .t2 {
+    font-size: calc(3vh + 1vw); /* Adjust font size for large screens */
   }
 
+  .para {
+    height: 500px;
+    width: 900px;
+    background-color: #A6D1E6;
+    font-size: calc(4vh + 1vw); /* Responsive font size for larger containers */
+    color: black;
+  }
+
+  .navbar a {
+    font-size: calc(2vh + 1vw); /* Larger navbar text on large screens */
+  }
 }
 
+/* Mobile screens */
 @media screen and (max-width: 768px) {
-  .navbar a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+  .navbar a {
+    font-size: calc(1vh + 1vw); /* Smaller font for navbar links on mobile */
   }
 }
-
