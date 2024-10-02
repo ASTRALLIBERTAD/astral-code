@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-body {
+body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ body {
 
 .t2 {
   grid-area: title;
-  font-size: calc(2.5vh + 1vw); /* Responsive font size based on viewport height and width */
+  font-size: 25px; /* Keep default font-size for smaller screens */
   font-family: Florence, cursive;
   text-align: center;
   color: black;
@@ -41,7 +41,7 @@ body {
   width: 300px;
   background-color: #433878;
   grid-area: container2;
-  font-size: calc(2vh + 1vw); /* Responsive font size based on viewport height */
+  font-size: 19px;
   color: #FEFBF6;
   font-family: Florence, Sans-Serif;
   text-align: center;
@@ -65,7 +65,6 @@ body {
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: calc(1.5vh + 1vw); /* Responsive font size */
 }
 
 .navbar li {
@@ -76,25 +75,25 @@ body {
 /* Larger screens */
 @media screen and (min-width: 1200px) {
   .t2 {
-    font-size: calc(3vh + 1vw); /* Adjust font size for large screens */
+    font-size: 35px; /* Keep your larger font-size for big screens */
   }
 
   .para {
     height: 500px;
     width: 900px;
     background-color: #A6D1E6;
-    font-size: calc(4vh + 1vw); /* Responsive font size for larger containers */
+    font-size: 50px; /* Maintain the intended size */
     color: black;
   }
 
   .navbar a {
-    font-size: calc(2vh + 1vw); /* Larger navbar text on large screens */
+    font-size: 60px; /* Keep navbar font-size unchanged for larger screens */
   }
 }
 
 /* Mobile screens */
 @media screen and (max-width: 768px) {
   .navbar a {
-    font-size: calc(1vh + 1vw); /* Smaller font for navbar links on mobile */
+    font-size: 20px; /* Smaller font for navbar links on mobile */
   }
 }
