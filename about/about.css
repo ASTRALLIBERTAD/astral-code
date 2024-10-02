@@ -47,7 +47,6 @@ body {
   text-align: center;
 }
 
-.navbar {
 .navbar{
   position: fixed;
   bottom: 0%;
@@ -86,6 +85,8 @@ body {
   }
 
   .navbar a {
+    color: white;
+    text-decoration: none;
     font-size: 60px; /* Increase font size for larger screens */
   }
 }
@@ -93,6 +94,8 @@ body {
 /* Mobile screens */
 @media screen and (max-width: 768px) {
   .navbar a {
+    color: white;
+    text-decoration: none;
     font-size: 20px; /* Smaller font size for mobile */
   }
 }
@@ -101,8 +104,3 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-
-  .title {
-    font-size: 18px;
-  }
-}
