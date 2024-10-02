@@ -80,7 +80,7 @@ body {
 }
 
 /* Larger screens */
-@media screen and (min-width: 1200px) {
+@media screen and (width > 1200px) {
   .t2 {
     font-size: 35px; /* Font size for larger screens */
   }
