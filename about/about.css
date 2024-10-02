@@ -96,7 +96,7 @@ body{
 }
 
 /* Mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .navbar a {
     color: white;
     text-decoration: none;
