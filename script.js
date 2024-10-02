@@ -1,7 +1,7 @@
 const pad = document.getElementById("pad");
 const smileText = document.getElementById("smile");
 
-// Function to detect screen width and return responsive values
+// Function to detect screen width and return responsive values based on note height
 function getResponsiveSizes() {
   const screenWidth = window.innerWidth;
   
