@@ -54,6 +54,7 @@ body{
   transform: translate(-50%);
   display: flex;
   word-spacing: 10px;
+  text-wrap: nowrap;
 }
 
 .navbar ul {
