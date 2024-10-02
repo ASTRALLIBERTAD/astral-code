@@ -9,9 +9,8 @@
   box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +30,7 @@ body{
 
 .t2 {
   grid-area: title;
-  font-size: 25px; /* Keep default font-size for smaller screens */
+  font-size: 25px; /* Default font size for smaller screens */
   font-family: Florence, cursive;
   text-align: center;
   color: black;
@@ -54,19 +53,25 @@ body{
   left: 50%;
   transform: translate(-50%);
   display: flex;
+  flex-wrap: wrap; /* Allow navbar items to wrap on smaller screens */
+  justify-content: center; /* Center the items */
   word-spacing: 10px;
-  text-wrap: nowrap;
 }
 
 .navbar ul {
   list-style-type: none;
   background-color: black;
   opacity: 25%;
+  padding: 0; /* Remove padding for better alignment */
+  margin: 0; /* Remove margin for better alignment */
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
+  padding: 10px; /* Add some padding for clickable area */
+  font-size: 20px; /* Base font size for navbar links */
+  transition: font-size 0.3s; /* Smooth transition for font-size */
 }
 
 .navbar li {
@@ -75,31 +80,27 @@ body{
 }
 
 /* Larger screens */
-@media screen and (width >= 1200px) {
+@media screen and (min-width: 1200px) {
   .t2 {
-    font-size: 35px; /* Keep your larger font-size for big screens */
+    font-size: 35px; /* Font size for larger screens */
   }
 
   .para {
     height: 500px;
     width: 900px;
     background-color: #A6D1E6;
-    font-size: 50px; /* Maintain the intended size */
+    font-size: 50px; /* Font size for larger screens */
     color: black;
   }
 
   .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 60px; /* Keep navbar font-size unchanged for larger screens */
+    font-size: 60px; /* Increase font size for larger screens */
   }
 }
 
 /* Mobile screens */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px; /* Smaller font for navbar links on mobile */
+    font-size: 20px; /* Smaller font size for mobile */
   }
 }
