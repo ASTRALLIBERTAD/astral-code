@@ -428,7 +428,7 @@ body{
   height: 40px;
   background-color: white;
   top: -18px;
-  left: -80px;
+  left: -60px;
   position: relative;
   transition: all 0.7s;
 }
@@ -483,7 +483,7 @@ body{
   height: 20px;
   background-color: white;
   top: -18px;
-  left: -80px;
+  left: -60px;
   position: relative;
   transition: all 0.7s;
 }
